@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Responsive viewport for all screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page title shown in browser tab -->
+    <title>Transformer Explainer</title>
+    <!-- Preconnect to Google Fonts CDN for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- 
+      Typography choices (from frontend-design skill):
+        Syne         — geometric display font, bold and technical-feeling
+        Fira Code    — monospace for code / numbers / matrices  
+        DM Sans      — clean body font
+    -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Fira+Code:wght@300;400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--
+      The root div where React mounts.
+      React calls ReactDOM.createRoot(document.getElementById('root'))
+      and renders our entire component tree inside here.
+    -->
+    <div id="root"></div>
+
+    <!--
+      The main entry JavaScript module.
+      Vite replaces this with the bundled JS in production.
+      In dev mode, this runs the ES module directly via native browser support.
+    -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

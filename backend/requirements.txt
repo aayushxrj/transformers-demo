@@ -1,0 +1,27 @@
+# backend/requirements.txt
+# ─────────────────────────────────────────────────────────────────
+# Install all dependencies with:
+#     pip install -r requirements.txt
+# ─────────────────────────────────────────────────────────────────
+
+# FastAPI  – the web framework
+#   Provides @app.get, @app.post decorators, BaseModel, HTTPException, etc.
+#   Modern async Python web framework, much faster than Flask for async tasks.
+fastapi==0.111.0
+
+# Uvicorn  – ASGI server that runs FastAPI
+#   Like gunicorn but built for async (ASGI) apps.
+#   The [standard] extra includes watchfiles for --reload support.
+uvicorn[standard]==0.29.0
+
+# Pydantic  – data validation (bundled with FastAPI, but explicit is good)
+#   All our BaseModel request/response schemas use pydantic under the hood.
+pydantic==2.7.1
+
+# NumPy  – numerical computing
+#   Powers ALL our transformer math: matrix multiply (@), exp, sqrt, etc.
+#   Without numpy we'd need to write matrix operations by hand.
+numpy==1.26.4
+
+# Python-multipart  – needed for file/form uploads if we add them later
+python-multipart==0.0.9
